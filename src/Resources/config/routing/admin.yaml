@@ -23,3 +23,9 @@ monsieurbiz_sylius_cms_page_ajax_generate_page_slug:
     defaults:
         _controller: MonsieurBiz\SyliusCmsPagePlugin\Controller\Admin\Page\PageSlugController::generateAction
 
+# Page preview
+monsieurbiz_cms_page_admin_page_preview:
+    path: /page/preview/{id}
+    defaults:
+        _controller: monsieurbiz_cms_page.controller.page::previewAction
+        template: '@MonsieurBizSyliusCmsPagePlugin\\Admin\\Page\\preview.html.twig'
